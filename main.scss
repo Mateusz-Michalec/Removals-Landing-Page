@@ -1,0 +1,133 @@
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+$d-blue: #0a2647;
+$md-blue: #144272;
+$blue: #205295;
+$l-blue: #2c74b3;
+
+.d-blue {
+  color: $d-blue;
+}
+
+.md-blue {
+  color: $md-blue;
+}
+
+.blue {
+  color: $blue;
+}
+
+.l-blue {
+  color: $l-blue;
+}
+
+body {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+.navbar-toggler {
+  border-color: $d-blue;
+  color: $d-blue;
+}
+
+.navbar-brand {
+  font-family: "Alfa Slab One", cursive;
+}
+
+.ff-h {
+  font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.welcome-banner {
+  position: relative;
+  background: url("../img/vans.jpg") no-repeat center 55%;
+  width: 100%;
+  background-size: cover;
+  height: 30vw;
+
+  header {
+    position: absolute;
+    top: 80%;
+    letter-spacing: 0.8rem;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+
+  &-adv {
+    background-color: $blue;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  &-adv div.row {
+    color: white;
+  }
+}
+
+.card img {
+  object-fit: cover;
+  height: 35vh;
+  border-radius: 0;
+}
+
+.header-section {
+  border-bottom: 3px solid $blue;
+  display: inline-block;
+}
+
+.price-list {
+  background-color: $d-blue;
+  color: white;
+}
+
+.ls-square {
+  list-style: square;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movein-btn {
+  background-color: $blue;
+  color: white;
+  &:hover {
+    background-color: $l-blue;
+    color: white;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-banner header {
+    font-size: 1.3rem;
+  }
+}
+
+.nav-item a {
+  color: $d-blue;
+  opacity: 0.8;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    color: $l-blue;
+  }
+}
+
+section,
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

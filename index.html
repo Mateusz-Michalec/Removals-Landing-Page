@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;600;700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-light shadow">
+      <div class="container-fluid">
+        <a href="#home" class="navbar-brand fs-2 pe-2"
+          ><span class="md-blue">Move</span><span class="l-blue">in</span></a
+        >
+        <a
+          href="#contact"
+          class="btn ms-auto movein-btn me-3 d-block d-lg-none"
+          role="button"
+          >Darmowa wycena</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target=".collapse"
+          aria-controls="Menu nagłówka"
+          aria-expanded="false"
+          aria-label="Menu rozwijane"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a href="#home" class="nav-link" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="#services" class="nav-link">Usługi</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="#priceList" class="nav-link">Cennik</a>
+            </li>
+            <li class="nav-item ps-3">
+              <a href="#contact" class="nav-link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="#contact"
+          class="btn ms-auto d-none d-lg-block movein-btn"
+          role="button"
+          >Darmowa wycena</a
+        >
+      </div>
+    </nav>
+
+    <main id="home">
+      <section class="welcome-banner d-flex justify-content-center">
+        <header
+          class="text-center h1 bg-white l-blue text-uppercase p-5 shadow-lg"
+        >
+          Przeprowadzki
+        </header>
+      </section>
+
+      <section class="welcome-banner-adv">
+        <div class="row g-5 text-center">
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="mb-4">
+              <i class="bi bi-rocket-takeoff display-5 mb-2"></i>
+              <h3 class="ff-h"><strong>Szybkość</strong></h3>
+            </div>
+
+            <h5 class="mb-2"><strong>Darmowa</strong>, szybka wycena</h5>
+            <h5 class="mb-0"><strong>Natychmiastowa</strong> realizacja</h5>
+            <hr class="w-50 mx-auto" />
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="mb-4">
+              <i class="bi bi-piggy-bank display-5 mb-2"></i>
+              <h3 class="ff-h"><strong>Oszczędność</strong></h3>
+            </div>
+
+            <h5 class="mb-2"><strong>Konkurencyjne</strong> ceny</h5>
+            <h5 class="mb-0"><strong>Minimalizacja</strong> ryzyka</h5>
+            <hr class="w-50 mx-auto" />
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="mb-4">
+              <i class="bi bi-hand-thumbs-up display-5 mb-2"></i>
+              <h3 class="ff-h"><strong>Solidność</strong></h3>
+            </div>
+
+            <h5 class="mb-2"><strong>Mocne</strong> zabezpieczenia</h5>
+            <h5 class="mb-0"><strong>Terminowość</strong> zleceń</h5>
+            <hr class="w-50 mx-auto" />
+          </div>
+          <div class="col-12 col-md-6 col-xxl-3">
+            <div class="mb-4">
+              <i class="bi bi-check2-circle display-5 mb-2"></i>
+              <h3 class="ff-h"><strong>Profesjonalizm</strong></h3>
+            </div>
+
+            <h5 class="mb-2"><strong>Gwarancja</strong> usługi</h5>
+            <h5 class="mb-0"><strong>Doświadczony</strong> zespół</h5>
+            <hr class="w-50 mx-auto" />
+          </div>
+        </div>
+      </section>
+
+      <section class="services px-5" id="services">
+        <header class="mb-5 h2 blue header-section ff-h">Usługi</header>
+        <div class="row g-5">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Pakowanie, zabezpieczanie mienia</strong>
+              </h5>
+              <img src="./img/employee.jpg" class="card-img-top" alt="" />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Oferujemy bezpieczne zabezpieczanie różnych rzeczy np. mebli,
+                  delikatych przedmitów itp. Możemy wykorzystać elementy do
+                  pakowania przekazane przez klienta bądź gwarantujemy jako
+                  dodatkową usługę własne materiały zabezpieczające.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Transport, przechowywanie towarów</strong>
+              </h5>
+              <img
+                src="./img/employee_checking.jpg"
+                class="card-img-top"
+                alt=""
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Istnieje możliwość nie tylko transportu danego towaru, lecz
+                  umożliwiamy także opcję przechowywania go w naszych
+                  magazynach. Podejmujemy się także realizacji nietypowych
+                  załadunków np. pianino.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Przeprowadzki prywatne</strong>
+              </h5>
+              <img
+                src="./img/woman_with_boxes.jpg"
+                class="card-img-top"
+                alt=""
+              />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Gwarantujemy kompleksowe przeprowadzki. Możesz osobiście
+                  przygotwać rzeczy do transportu lub zrobimy wszystko za
+                  ciebie. Nie straszne są nam takie problemy jak wysokie piętro
+                  czy wąskie bądź niskie przejścia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Przeprowadzki biurowe</strong>
+              </h5>
+              <img src="./img/office.jpg" class="card-img-top" alt="" />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Przeprowadzka biurowa to duże wyzwanie. My się z nim uporamy.
+                  Realizujemy przeprowadzki różnych firm i instytucji - od
+                  małego przedsiębiorstwa po ogromne biblioteki.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Przeprowadzki krajowe</strong>
+              </h5>
+              <img src="./img/employee_van.jpg" class="card-img-top" alt="" />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Opcja transportu i zabezpieczania towarów na terenie całej
+                  Polski. Nie ważne jak daleko mieszkasz, nasza flota dotrze
+                  wszędzie w granicach Polski.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card text-bg-white shadow-lg h-100">
+              <h5 class="card-header text-center p-3 l-blue">
+                <strong>Przeprowadzki zagraniczne</strong>
+              </h5>
+              <img src="./img/van.jpg" class="card-img-top" alt="" />
+
+              <div class="card-body">
+                <p class="card-text">
+                  Oferujemy możliwie jak najszybszy transport zagraniczny. Nie
+                  musisz obawiać się formalnościami celnymi. Wszystkim się
+                  zajmiemy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price-list px-5" id="priceList">
+        <header class="h2 header-section ff-h mb-5 text-light">Cennik</header>
+        <div class="d-flex">
+          <div class="mx-auto pe-0 pe-lg-5 pb-5">
+            <p class="text-light">
+              Na koszt przeprowadzki wpływają liczne czynniki. Nasza firma
+              dokunuje zawsze <strong>darmowej</strong> wyceny dla klientów.
+              Mogą Państwo skorzystać z cennika ogólnego, darmowej wyceny
+              telefonicznej, mailowej oraz wiadomośći facebook.
+            </p>
+            <h4 class="mt-5 mb-3 ff-h text-light">
+              Od czego zależy cena przeprowadzki?
+            </h4>
+
+            <ul class="ls-square text-light">
+              <li class="mb-1">
+                Kto będzie pakował przedmioty i demontował meble? Oferujemy
+                takie usługi lub mogą Państwo zrobić to samodzielnie, a my
+                zajmiemy się tylko transportem.
+              </li>
+              <li class="mb-1">
+                Ile będzie transportowanych przedmiotów? (z ilu pomieszczeń, ile
+                mebli, sprzętów itd.)
+              </li>
+              <li class="mb-1">
+                Czy konieczny będzie transport mebli wielkogabarytowych, ile ich
+                będzie (i jakie?) / lub przedmiotów powyżej 100kg?
+              </li>
+              <li class="mb-1">
+                Czy są jakieś utrudnienia w przeprowadzce np. duża ilość pięter
+                i brak windy, utrudniony podjazd pod klatkę schodową/dom itp.
+              </li>
+              <li>
+                Odległość pomiędzy miejscem początkowym a punktem docelowym.
+                Skala oraz rodzaj koniecznych zabezpieczeń do przeprowadzki.
+              </li>
+            </ul>
+            <h4 class="mt-5 mb-3 ff-h text-light">Cennik ogólny</h4>
+            <div class="row g-5">
+              <div class="col-12 col-xl-6">
+                <ul class="text-light">
+                  <li class="mb-1">
+                    Auto dostawcze 20m3 + 1 pracownik od 100 zł/godz.
+                  </li>
+                  <li class="mb-1">
+                    Auto dostawcze + 2 pracowników od 140 zł/godz.
+                  </li>
+                  <li class="mb-1">
+                    Auto dostawcze + 3 pracowników od 170zł/godz.
+                  </li>
+                  <li class="mb-1">
+                    Auta dostawcze + 4 pracowników od 210 zł/godz.
+                  </li>
+                  <li>Auta dostawcze + 6 pracowników od 250 zł/godz.</li>
+                </ul>
+              </div>
+              <div class="col-12 col-xl-6">
+                <ul class="text-light">
+                  <li class="mb-1">Kartony (42x33,5x34cm): 5 zł brutto</li>
+                  <li class="mb-1">Folia strech (3 kg): 40 zł brutto</li>
+                  <li>Folia bąbelkowa</li>
+                  <li class="list-unstyled">
+                    <ul>
+                      <li class="mb-1">
+                        (szerokość 50 cm 100mb): 50 zł brutto
+                      </li>
+                      <li class="mb-1">
+                        (szerokość 100 cm 100mb): 100 zł brutto
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="mb-1">Taśma klejąca (rolka): 5 zł brutto</li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <ul class="text-light">
+              <li class="mb-1">
+                Minimalny czas trwania usługi 1 auta wynosi 2 godz./dwóch aut to
+                3 godziny.
+              </li>
+              <li class="mb-1">
+                Rzeczy (gabaryty) powyżej 100 kg – wycena indywidualna na
+                miejscu
+              </li>
+              <li class="mb-1">
+                Auta są wyposażone w wózki, pasy transportowe, folie stretch,
+                folię bąbelkową, koce przemysłowe, worki.
+              </li>
+              <li class="mb-1">
+                Auta którymi dysponujemy mają kubaturę 20m3 i wymiary: 4,2 m
+                długości, 2,3m wysokości, 2,1 m szerokości.
+              </li>
+              <li>
+                W przypadku przeprowadzki kompleksowej, na życzenie klienta
+                dostarczamy materiały (worki, kartony, taśmy) wcześniej
+                odpłatnie.
+              </li>
+              <li>
+                W sytuacji gdy to nasi pracownicy będą pakować rzeczy ,
+                wszystkie materiały są w cenie usługi.
+              </li>
+              <li>
+                Przeprowadzki krajowe w zależności od odległości od 1,5 zł do
+                2,5 zł za kilometr plus załadunek i rozładunek w zależności od
+                zaangażowanych pracowników i aut liczone w stawce godzinowej jak
+                wyżej.
+              </li>
+              <li>Opróżnienie piwnic, utylizacja mebli wycena indywidualna</li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-flex pb-5">
+            <img src="./img/clothes.jpg" class="img-cover" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="contact px-5" id="contact">
+        <header class="h2 header-section mb-5 ff-h blue">Kontakt</header>
+        <div class="row m-0 shadow-lg">
+          <div class="col-6 d-none d-lg-flex p-0">
+            <div>
+              <img src="./img/after_move.jpg" class="img-cover" alt="" />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column p-5">
+            <h2 class="mb-5 ff-h">
+              Skorzystaj z <strong class="l-blue">darmowej</strong> wyceny
+            </h2>
+            <div class="d-flex flex-column">
+              <div class="d-flex mb-5 align-items-center">
+                <i class="me-3 bi bi-telephone blue h1"></i>
+                <h3 class="ff-h blue">546 217 281</h3>
+              </div>
+              <div class="d-flex mb-5 align-items-center">
+                <i class="me-3 bi bi-geo-alt h1 blue"></i>
+                <h3 class="ff-h blue">ul. Biznesowa 2, Radom 26-600</h3>
+              </div>
+              <div class="d-flex mb-5 align-items-center">
+                <i class="me-3 bi bi-facebook h1 blue"></i>
+                <h3 class="ff-h blue">Movein</h3>
+              </div>
+              <div class="d-flex mb-5 align-items-center">
+                <i class="me-3 bi bi-envelope-at h1 blue"></i>
+                <h3 class="ff-h blue">Movein@example.com</h3>
+              </div>
+            </div>
+
+            <form action="" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Imię*</label>
+                <input type="text" class="form-control" name="name" required />
+                <div class="invalid-feedback">Pole wymagane.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="surname" class="form-label">Nazwisko*</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="surname"
+                  required
+                />
+                <div class="invalid-feedback">Pole wymagane.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="tel" class="form-label">Telefon*</label>
+                <input type="tel" class="form-control" name="tel" required />
+                <div class="invalid-feedback">Pole wymagane.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail*</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  required
+                />
+                <div class="invalid-feedback">Pole wymagane.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość*</label>
+                <textarea
+                  name="message"
+                  class="form-control shadow-sm"
+                  rows="5"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Pole wymagane.</div>
+              </div>
+
+              <div class="w-50 text-center mx-auto mb-5">
+                <button class="btn movein-btn">Wyślij wiadomość</button>
+                <p class="emailed mt-2 text-success fw-bold d-none">
+                  Wiadomość wysłano!
+                </p>
+              </div>
+            </form>
+
+            <div class="text-center mt-auto d-flex flex-column">
+              <a href="#" class="navbar-brand fs-2 pe-2"
+                ><span class="md-blue">Move</span
+                ><span class="l-blue">in</span></a
+              >
+              Movein © 2023 by MatthewDevv
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
