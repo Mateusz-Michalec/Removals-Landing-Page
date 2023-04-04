@@ -116,3 +116,17 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero-img {
+    height: 50vh;
+  }
+
+  .hero .h1 {
+    letter-spacing: 0.8rem;
+  }
+}
