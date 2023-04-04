@@ -6,7 +6,7 @@ window.onload = function () {
   const email = document.getElementsByName("email")[0];
   const message = document.getElementsByName("message")[0];
   const emailed = document.querySelector(".emailed");
-  let formData = {};
+  const formData = {};
 
   Array.from(forms).forEach((form) => {
     form.addEventListener("submit", (event) => {

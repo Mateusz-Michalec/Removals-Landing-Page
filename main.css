@@ -1,4 +1,3 @@
-@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
 .d-blue {
   color: #0a2647;
 }
@@ -13,14 +12,6 @@
 
 .l-blue {
   color: #2c74b3;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -44,24 +35,29 @@ textarea {
   resize: none;
 }
 
-.welcome-banner {
-  background: url("./img/vans.jpg") no-repeat center 55%;
-  background-size: cover;
-  height: 50vh;
+.hero {
+  height: 25vh;
+  margin-top: 40px;
 }
-.welcome-banner header {
-  letter-spacing: 0.7rem;
-  bottom: -25%;
+
+.hero-img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50% 50%;
+  height: 26vh;
+}
+
+.hero .h1 {
+  position: absolute;
+  top: 80%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  letter-spacing: 0.4rem;
+  max-width: 95vw;
 }
-.welcome-banner-adv {
+
+.adv-section {
   background-color: #205295;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.welcome-banner-adv div.row {
-  color: white;
 }
 
 .card img {
@@ -99,12 +95,6 @@ textarea {
   color: white;
 }
 
-@media (max-width: 992px) {
-  .welcome-banner header {
-    font-size: 1.3rem;
-  }
-}
-
 .nav-item a {
   color: #0a2647;
   opacity: 0.8;
@@ -118,6 +108,11 @@ textarea {
 
 section,
 footer {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 100px 0;
+}
+
+@media (max-width: 992px) {
+  .welcome-banner header {
+    font-size: 1.3rem;
+  }
 }

@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,16 +84,17 @@
     </nav>
 
     <main id="home">
-      <section class="welcome-banner position-relative">
-        <header
-          class="position-absolute h1 bg-white l-blue text-uppercase p-5 shadow-lg fw-bold fs-3"
+      <header class="hero position-relative">
+        <img class="hero-img" src="./img/vans.jpg" alt="Auta dostawcze" />
+        <h1
+          class="h1 bg-white l-blue text-uppercase p-4 shadow-lg fw-bold fs-3"
         >
           Przeprowadzki
-        </header>
-      </section>
+        </h1>
+      </header>
 
-      <section class="welcome-banner-adv">
-        <div class="row g-5 text-center">
+      <section class="container-fluid adv-section px-lg-5">
+        <div class="row gy-5 text-center text-white">
           <div class="col-12 col-md-6 col-xxl-3">
             <div class="mb-4">
               <i class="bi bi-rocket-takeoff display-5 mb-2"></i>
@@ -98,7 +103,7 @@
 
             <h5 class="mb-2"><strong>Darmowa</strong>, szybka wycena</h5>
             <h5 class="mb-0"><strong>Natychmiastowa</strong> realizacja</h5>
-            <hr class="w-50 mx-auto" />
+            <hr class="w-75 mx-auto" />
           </div>
           <div class="col-12 col-md-6 col-xxl-3">
             <div class="mb-4">
@@ -108,7 +113,7 @@
 
             <h5 class="mb-2"><strong>Konkurencyjne</strong> ceny</h5>
             <h5 class="mb-0"><strong>Minimalizacja</strong> ryzyka</h5>
-            <hr class="w-50 mx-auto" />
+            <hr class="w-75 mx-auto" />
           </div>
           <div class="col-12 col-md-6 col-xxl-3">
             <div class="mb-4">
@@ -118,7 +123,7 @@
 
             <h5 class="mb-2"><strong>Mocne</strong> zabezpieczenia</h5>
             <h5 class="mb-0"><strong>Terminowość</strong> zleceń</h5>
-            <hr class="w-50 mx-auto" />
+            <hr class="w-75 mx-auto" />
           </div>
           <div class="col-12 col-md-6 col-xxl-3">
             <div class="mb-4">
@@ -128,20 +133,24 @@
 
             <h5 class="mb-2"><strong>Gwarancja</strong> usługi</h5>
             <h5 class="mb-0"><strong>Doświadczony</strong> zespół</h5>
-            <hr class="w-50 mx-auto" />
+            <hr class="w-75 mx-auto" />
           </div>
         </div>
       </section>
 
-      <section class="services px-5" id="services">
+      <section class="container-fluid services px-5" id="services">
         <header class="mb-5 h2 blue header-section ff-h">Usługi</header>
-        <div class="row g-5">
+        <div class="row gy-5">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Pakowanie, zabezpieczanie mienia</strong>
               </h5>
-              <img src="./img/employee.jpg" class="card-img-top" alt="" />
+              <img
+                src="./img/employee.jpg"
+                class="card-img-top"
+                alt="Pracownik noszący pudło"
+              />
 
               <div class="card-body">
                 <p class="card-text">
@@ -155,14 +164,14 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Transport, przechowywanie towarów</strong>
               </h5>
               <img
                 src="./img/employee_checking.jpg"
                 class="card-img-top"
-                alt=""
+                alt="Pracownik sprawdzający towar"
               />
 
               <div class="card-body">
@@ -177,14 +186,14 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Przeprowadzki prywatne</strong>
               </h5>
               <img
                 src="./img/woman_with_boxes.jpg"
                 class="card-img-top"
-                alt=""
+                alt="Kobieta z pudełkiem"
               />
 
               <div class="card-body">
@@ -199,11 +208,11 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Przeprowadzki biurowe</strong>
               </h5>
-              <img src="./img/office.jpg" class="card-img-top" alt="" />
+              <img src="./img/office.jpg" class="card-img-top" alt="Biuro" />
 
               <div class="card-body">
                 <p class="card-text">
@@ -216,11 +225,15 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Przeprowadzki krajowe</strong>
               </h5>
-              <img src="./img/employee_van.jpg" class="card-img-top" alt="" />
+              <img
+                src="./img/employee_van.jpg"
+                class="card-img-top"
+                alt="Kurier z paczkami"
+              />
 
               <div class="card-body">
                 <p class="card-text">
@@ -233,11 +246,15 @@
           </div>
 
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card text-bg-white shadow-lg h-100">
+            <div class="card text-bg-white shadow-lg">
               <h5 class="card-header text-center p-3 l-blue">
                 <strong>Przeprowadzki zagraniczne</strong>
               </h5>
-              <img src="./img/van.jpg" class="card-img-top" alt="" />
+              <img
+                src="./img/van.jpg"
+                class="card-img-top"
+                alt="Przeprowadzki zagraniczne"
+              />
 
               <div class="card-body">
                 <p class="card-text">
@@ -251,7 +268,7 @@
         </div>
       </section>
 
-      <section class="price-list px-5" id="priceList">
+      <section class="container-fluid price-list px-5" id="priceList">
         <header class="h2 header-section ff-h mb-5 text-light">Cennik</header>
         <div class="d-flex">
           <div class="mx-auto pe-0 pe-lg-5 pb-5">
@@ -289,7 +306,7 @@
               </li>
             </ul>
             <h4 class="mt-5 mb-3 ff-h text-light">Cennik ogólny</h4>
-            <div class="row g-5">
+            <div class="row">
               <div class="col-12 col-xl-6">
                 <ul class="text-light">
                   <li class="mb-1">
@@ -369,38 +386,42 @@
         </div>
       </section>
 
-      <footer class="contact px-5" id="contact">
+      <footer class="container-fluid px-5" id="contact">
         <header class="h2 header-section mb-5 ff-h blue">Kontakt</header>
-        <div class="row m-0 shadow-lg">
+        <div class="row shadow-lg">
           <div class="col-6 d-none d-lg-flex p-0">
             <div>
-              <img src="./img/after_move.jpg" class="img-cover" alt="" />
+              <img
+                src="./img/after_move.jpg"
+                class="img-cover"
+                alt="Kobieta wieszająca obraz"
+              />
             </div>
           </div>
           <div class="col-12 col-lg-6 d-flex flex-column p-5">
             <h2 class="mb-5 ff-h">
               Skorzystaj z <strong class="l-blue">darmowej</strong> wyceny
             </h2>
-            <div class="d-flex flex-column">
-              <div class="d-flex mb-5 align-items-center">
+            <div class="row gy-5">
+              <div class="col-12 d-flex align-items-center">
                 <i class="me-3 bi bi-telephone blue h1"></i>
                 <h3 class="ff-h blue">546 217 281</h3>
               </div>
-              <div class="d-flex mb-5 align-items-center">
+              <div class="col-12 d-flex align-items-center">
                 <i class="me-3 bi bi-geo-alt h1 blue"></i>
                 <h3 class="ff-h blue">ul. Biznesowa 2, Radom 26-600</h3>
               </div>
-              <div class="d-flex mb-5 align-items-center">
+              <div class="col-12 d-flex align-items-center">
                 <i class="me-3 bi bi-facebook h1 blue"></i>
                 <h3 class="ff-h blue">Movein</h3>
               </div>
-              <div class="d-flex mb-5 align-items-center">
+              <div class="col-12 d-flex align-items-center">
                 <i class="me-3 bi bi-envelope-at h1 blue"></i>
-                <h3 class="ff-h blue">Movein@example.com</h3>
+                <h3 class="ff-h blue text-break">Movein@example.com</h3>
               </div>
             </div>
 
-            <form action="" class="needs-validation" novalidate>
+            <form action="" class="needs-validation mt-5" novalidate>
               <div class="mb-3">
                 <label for="name" class="form-label">Imię*</label>
                 <input type="text" class="form-control" name="name" required />
@@ -446,7 +467,7 @@
                 <div class="invalid-feedback">Pole wymagane.</div>
               </div>
 
-              <div class="w-50 text-center mx-auto mb-5">
+              <div class="d-flex justify-content-center mb-5">
                 <button class="btn movein-btn">Wyślij wiadomość</button>
                 <p class="emailed mt-2 text-success fw-bold d-none">
                   Wiadomość wysłano!
